@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./MainPage.css";
-import watchImg from "../assets/WatchBg.png"
+import watchImg from "../assets/WatchBg.png";
 const MainPage = () => {
   const [days, setDays] = useState("");
   const [hours, setHours] = useState("");
@@ -38,17 +38,17 @@ const MainPage = () => {
   }, 1000);
 
   return (
-    <div className="TimerContainer font-serif flex justify-center  items-center h-screen w-full  bg-black text-white">
-      <div className="main px-10">
+    <div className="TimerContainer font-serif flex justify-center  items-center h-screen w-full overflow-x-hidden bg-black text-white">
+      <div className=" px-10">
         <div className="md:flex justify-center items-center">
-        <h1 className=" quets text-2xl md:text-5xl max-w-[50%] font-sans ">Every second brings us closer to being together.</h1>
+          <h1 className=" quets text-2xl md:text-5xl max-w-[50%] font-sans ">
+            Every second brings us closer to being together.
+          </h1>
 
-<div className="watch mb-20">
-    <img className="" src={watchImg} alt="" />
-</div>
-
+          <div className="watch mb-20">
+            <img className="" src={watchImg} alt="" />
+          </div>
         </div>
-       
 
         <div className="meters flex   justify-center items-center gap-5">
           <div className="days custom">
@@ -62,7 +62,7 @@ const MainPage = () => {
 
           <div className="minutes custom">
             <h1> Minuts</h1>
-            <h1> {minutes}</h1> 
+            <h1> {minutes}</h1>
           </div>
           <div className="second custom">
             <h1> Second</h1>
