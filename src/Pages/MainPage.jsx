@@ -28,7 +28,7 @@ const MainPage = () => {
     const remainingSeconds = diffInSeconds % 60;
 
     setHours(remainingHours);
-    setMinutes(remainingHours);
+    setMinutes(remainingMinutes);
     setSecond(remainingSeconds);
     setDays(diffInDays);
   };
@@ -39,7 +39,7 @@ const MainPage = () => {
 
   return (
     <div className="TimerContainer font-serif flex justify-center  items-center h-screen w-full  bg-black text-white">
-      <div className="main px-10">
+      <div className="main px-10 m-10">
 
         <h1 className=" quets text-2xl max-w-[250px] font-sans ">Every second brings us closer to being together.</h1>
 
@@ -50,7 +50,7 @@ const MainPage = () => {
 
         <div className="meters flex   justify-center items-center gap-5">
           <div className="days custom">
-            <h1> Date</h1>
+            <h1> Days</h1>
             <h1> {days}</h1>
           </div>
           <div className="hours custom">
@@ -60,7 +60,7 @@ const MainPage = () => {
 
           <div className="minutes custom">
             <h1> Minuts</h1>
-            <h1> {minutes}</h1>
+            <h1> {minutes}</h1> 
           </div>
           <div className="second custom">
             <h1> Second</h1>
