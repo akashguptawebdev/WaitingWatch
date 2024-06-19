@@ -39,14 +39,16 @@ const MainPage = () => {
 
   return (
     <div className="TimerContainer font-serif flex justify-center  items-center h-screen w-full  bg-black text-white">
-      <div className="main px-10 m-10">
+      <div className="main px-10">
+        <div className="md:flex justify-center items-center">
+        <h1 className=" quets text-2xl md:text-5xl max-w-[50%] font-sans ">Every second brings us closer to being together.</h1>
 
-        <h1 className=" quets text-2xl max-w-[250px] font-sans ">Every second brings us closer to being together.</h1>
+<div className="watch mb-20">
+    <img className="" src={watchImg} alt="" />
+</div>
 
-            <div className="watch mb-20">
-                <img className="" src={watchImg} alt="" />
-            </div>
-
+        </div>
+       
 
         <div className="meters flex   justify-center items-center gap-5">
           <div className="days custom">
