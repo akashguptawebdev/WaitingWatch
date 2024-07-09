@@ -8,7 +8,7 @@ const MainPage = () => {
   const [second, setSecond] = useState("");
 
   const findDateAndTime = () => {
-    const futureDate = new Date("2024-07-12");
+    const futureDate = new Date("2024-07-13");
 
     // Get the current date
     const currentDate = new Date();
